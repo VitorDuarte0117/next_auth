@@ -2,10 +2,10 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import React from "react";
 
-const SignInButton = () => {
+const SigninButton = () => {
   const { data: session } = useSession();
-  console.log(session?.user);
 
+  console.log(session?.user);
   if (session && session.user) {
     return (
       <div className="flex gap-4 ml-auto">
@@ -23,4 +23,4 @@ const SignInButton = () => {
   );
 };
 
-export default SignInButton;
+export default SigninButton;

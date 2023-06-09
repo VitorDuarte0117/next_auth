@@ -8,7 +8,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Providers>
           <AppBar />
-          {children}
+          <div className={"min-h-screen"}>
+            {children}
+          </div>
         </Providers>
       </body>
     </html>
